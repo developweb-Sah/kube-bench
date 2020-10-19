@@ -21,7 +21,7 @@ groups:
 - id: 1.1
   text: API Server
   checks:
-    - id: 1.1.1
+    - id: 1.1.2
       text: "Ensure that the --allow-privileged argument is set (Scored)"
       audit: "ps -ef | grep kube-apiserver | grep -v grep"
       tests:
@@ -214,7 +214,7 @@ specifies the value to compare against.
 The `op` (operations) currently supported in `kube-bench` are:
 - `eq`: tests if the keyword is equal to the compared value.
 - `noteq`: tests if the keyword is unequal to the compared value.
-- `gt`: tests if the keyword is greater than the compared value.
+- `gt`: tests if the keyword is greater than the value compared.
 - `gte`: tests if the keyword is greater than or equal to the compared value.
 - `lt`: tests if the keyword is less than the compared value.
 - `lte`: tests if the keyword is less than or equal to the compared value.
